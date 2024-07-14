@@ -11,7 +11,7 @@ const Message = ({data}) => {
 
   return (
     <div className='message'>
-        <Avatar round={true} size='35'/>
+        <Avatar round={true} size='35'name={data.sender.name}/>
         <p className="content"  style={{ backgroundColor: isSelect ? 'var(--message-box-bg-color-own)' : 'var(--message-box-bg-color)' }}>{data.message}</p>
     </div>
   )
