@@ -1,0 +1,6 @@
+.message-container{
+    height: calc(100% - 95px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 20px 10px;
+}

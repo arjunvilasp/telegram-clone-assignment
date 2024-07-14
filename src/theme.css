@@ -1,0 +1,30 @@
+/* theme.css */
+:root {
+  --sidebar-container-bg-color: #fff;
+  --sidebar-link-color: grey;
+  --text-color: #000;
+  --message-text-color: #fff;
+  --chat-users-bg: #fff;
+  --message-bg: url("/chat_bg.png");
+  --message-count-bg: #ddd;
+  --user-chat-hover-color: #edecec;
+  --message-header-input-color: #fff;
+  --chat-user-header-search-color: #f4efef;
+  --message-box-bg-color-own: #e1e9d4;
+  --message-box-bg-color: #fff;
+}
+
+.dark-mode {
+  --sidebar-container-bg-color: #17212b;
+  --sidebar-link-color: rgb(223, 220, 220);
+  --text-color: #dcd6d6;
+  --message-text-color: #030303;
+  --chat-users-bg: #17212b;
+  --message-bg: #0e1621;
+  --message-count-bg: #4082bc;
+  --user-chat-hover-color: #0e1621;
+  --message-header-input-color: #17212b;
+  --chat-user-header-search-color: rgb(66, 65, 75);
+  --message-box-bg-color-own: #2b5278;
+  --message-box-bg-color: #182533;
+}

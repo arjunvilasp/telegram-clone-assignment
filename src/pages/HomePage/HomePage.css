@@ -1,0 +1,103 @@
+.home-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.home-container .chat-users{
+    flex:1;
+    position: relative;
+    padding: 5px;
+    border-right: 1px solid grey;
+    background-color: var(--chat-users-bg);
+}
+
+.home-container .chat-users.hidden {
+    display: none;
+}
+
+.home-container .chat-users .header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: grey;
+    padding: 10px;
+}
+
+.home-container .chat-users .header .search{
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: grey;
+}
+
+.home-container .chat-users .chat-cards{
+    height:calc(100% - 50px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.home-container .chat-users .header .search{
+    height: 40px;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--chat-user-header-search-color);
+}
+
+.home-container .chat-window{
+    flex: 2;
+    height: 100%;
+    width: 100%;
+}
+
+
+.home-container .chat-window .no-chat-img{
+    height: 100%;
+    width: 100%;
+    background: var(--message-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.home-container .chat-window .no-chat-img > p{
+   color: #fff;
+   font-size: 13px;
+   background-color: rgba(113, 111, 111, 0.5);
+   padding: 8px;
+   border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .chat-users, .chat-window {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow-y: auto;
+    }
+  
+    .chat-window.active {
+      z-index: 10;
+    }
+  
+    .mobile-header {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+  
+    .mobile-header h2 {
+      margin-left: 20px;
+    }
+  }
